@@ -17,8 +17,6 @@ static int majorNumber;
 static struct class *rytters_device_class = NULL;
 static struct device *rytters_device = NULL;
 
-static char c;
-
 static int device_open(struct inode *inode, struct file *file)
 {
     printk("MYCHARDEV: Device open\n");
