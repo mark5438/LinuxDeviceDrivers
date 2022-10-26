@@ -21,4 +21,8 @@ Registers a char device driver as /dev/rytter. This file can be opened, closed, 
 
 ### gpio_interrupt_driver
 
-Prints a kernelmessage when a certain gpio pin goes from high to low
+Prints a kernelmessage when a certain gpio pin goes from high to low. This module can be loaded with a parameter determining what gpio pin to use:
+
+`$ sudo insmod gpioint.ko gpio_in=[GPIO PIN NUMBER]`
+
+The default gpio pin number is 17
