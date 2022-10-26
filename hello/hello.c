@@ -1,7 +1,3 @@
-#define MODULE
-#define LINUX
-#define __KERNEL__
-
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/init.h>
